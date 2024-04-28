@@ -44,8 +44,11 @@
                             <p>As a student, I've immersed myself in diverse aspects of Web Developer, exploring user
                                 experience enhancement, coding proficiency, and effective project management, and many
                                 more..</p>
-                            <a style="margin: 10px;" href="https://www.linkedin.com/in/harsh-gupta-220722257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHaHgpn1HSayc7xblDZMfYA%3D%3D" target="_blank" class="btn hire-me">Linkedin</a>
-                            <a style="margin: 10px;" href="https://github.com/harshgupta287" target="_blank" class="btn hire-me">Git Hub</a>
+                            <a style="margin: 10px;"
+                                href="https://www.linkedin.com/in/harsh-gupta-220722257?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHaHgpn1HSayc7xblDZMfYA%3D%3D"
+                                target="_blank" class="btn hire-me">Linkedin</a>
+                            <a style="margin: 10px;" href="https://github.com/harshgupta287" target="_blank"
+                                class="btn hire-me">Git Hub</a>
                         </div>
                         <div class="home-img padd-15">
                             <img src="image/hero.jpg" alt="img">
@@ -98,7 +101,8 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="https://drive.google.com/file/d/17qKQpytCTOuaV5aMwzzCuekMkycyHcsO/view?usp=drivesdk" class="btn" target="_blank">Download CV</a>
+                                            <a href="https://drive.google.com/file/d/17qKQpytCTOuaV5aMwzzCuekMkycyHcsO/view?usp=drivesdk"
+                                                class="btn" target="_blank">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
                                     </div>
@@ -312,11 +316,15 @@
                         <div class="portfolio-item padd-15">
                             <div class="portfolio-item-inner shadow-dark">
                                 <div class="portfolio-img">
-                                    <iframe width="560" height="200" src="https://www.youtube.com/embed/gkOBgGCKoqA?si=yHb6GLDknNX4o4qB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                    <iframe width="560" height="200"
+                                        src="https://www.youtube.com/embed/gkOBgGCKoqA?si=yHb6GLDknNX4o4qB"
+                                        title="YouTube video player" frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <a href="https://github.com/harshgupta287/Nexus" target="_blank">
-                                <button class="btn">Git Hub</button>
+                                <button style="margin-top: 20px;" class="btn">Git Hub</button>
                             </a>
                         </div>
                         <div class="portfolio-item padd-15">
@@ -326,7 +334,7 @@
                                 </div>
                             </div>
                             <a href="https://github.com/harshgupta287/My-portfolio" target="_blank">
-                                <button class="btn">Git Hub</button>
+                                <button style="margin-top: 20px;" class="btn">Git Hub</button>
                             </a>
                         </div>
                         <div class="portfolio-item padd-15">
@@ -336,7 +344,7 @@
                                 </div>
                             </div>
                             <a href="#" target="_blank">
-                                <button class="btn">Git Hub</button>
+                                <button style="margin-top: 20px;" class="btn">Git Hub</button>
                             </a>
                         </div>
                     </div>
@@ -377,39 +385,45 @@
                     <h4 class="contact-sub-title padd-15">I`M VERY RESPONSIVE TO MESSAGES</h4>
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                            <form id="contactForm" onsubmit="sendEmail(); reset(); return false;">
+                                <div class="row">
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" id="name" class="form-control" placeholder="Name"
+                                                required>
+                                        </div>
+                                    </div>
+                                    <div class="form-item col-6 padd-15">
+                                        <div class="form-group">
+                                            <input type="email" id="email" class="form-control" placeholder="Email"
+                                                required>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <input type="text" id="phone" class="form-control"
+                                                placeholder="Phone Number" required>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <textarea name="" class="form-control" id="message"
+                                                placeholder="Message"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                <div class="row">
+                                    <div class="form-item col-12 padd-15">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn">Send Message</button>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <button type="submit" class="btn">Send Message</button>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -434,6 +448,8 @@
     </div>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="js/mail.js"></script>
 </body>
 
 </html>
