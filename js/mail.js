@@ -1,16 +1,17 @@
-function sendEmail() {
-    Email.send({
-        Host: "smtp.gmail.com",
-        Username: "harshgupta274402@gmail.com",
-        Password: "harsh@287",
-        To: 'harshgupta274402@gmail.com',
-        From: document.getElementById("email").value,
-        Subject: "New Contact Form Enquiry",
-        Body: "Name: " + document.getElementById("name").value
-        + "<br> Email: " + document.getElementById("email").value
-        + "<br> Phone No.: " + document.getElementById("phone").value
-        + "<br> Message: " + document.getElementById("message").value
-    }).then(
-        message => alert("Message Sent Succesfully!")
-    );
+function SendMail() {
+    var params = {
+        name: document.getElementById("name").value,
+        email: document.getElementById("email").value,
+        phone: document.getElementById("phone").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send("service_4ie7ovt", "template_2omm9rh", params)
+        .then(function(response) {
+            alert("Email sent successfully!");
+            console.log("SUCCESS!", response);
+        }, function(error) {
+            alert("Email could not be sent. Please try again later.");
+            console.log("FAILED...", error);
+        });
 }
