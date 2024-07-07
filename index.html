@@ -46,7 +46,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
-                            <h3 class="hello">Hello, my name is <span class="name">Harsh Gupta</span></h3>
+                            <h3 class="hello">Hello 👋, my name is <span class="name">Harsh Gupta</span></h3>
                             <h3 class="my-profession">I'm currently pursuing my B.Tech in <span class="typing">Computer
                                     Science </span>from <span class="typing">SVNIT </span></h3>
                             <p>As a student, I've immersed myself in diverse aspects of Web Developer, exploring user
@@ -109,7 +109,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="buttons padd-15">
-                                            <a href="https://drive.google.com/file/d/17qKQpytCTOuaV5aMwzzCuekMkycyHcsO/view?usp=drivesdk"
+                                            <a href="https://drive.google.com/file/d/1JbquSrvxkbYBQh9CyCCVEmUwhf5edaim/view?usp=drivesdk"
                                                 class="btn" target="_blank">Download CV</a>
                                             <a href="#contact" class="btn hire-me">Hire Me</a>
                                         </div>
@@ -399,10 +399,11 @@
                     <h4 class="contact-sub-title padd-15">I`M VERY RESPONSIVE TO MESSAGES</h4>
                     <div class="row">
                         <div class="contact-form padd-15">
-                            <form>
+                            <form action="https://api.web3forms.com/submit" method="POST">
                                 <div class="row">
                                     <div class="form-item col-6 padd-15">
                                         <div class="form-group">
+                                            <input type="hidden" name="access_key" value="b7b1fea6-be8e-4b57-ad5a-357d8557b16a">
                                             <input type="text" id="name" class="form-control" placeholder="Name"
                                                 required>
                                         </div>
@@ -486,23 +487,8 @@
             <span class="color-5" onclick="setActiveStyle('color-5')"></span>
         </div>
     </div>
-    <script>
-        function SendMail() {
-            var parms = {
-                name: document.getElementById("name").value,
-                email: document.getElementById("email").value,
-                phone: document.getElementById("phone").value,
-                message: document.getElementById("messgae").value
-            }
-
-            emailjs.send("service_4ie7ovt", "template_sd8s7ab", parms).then(function (res) {
-                alert("Success!" + res.status);
-            })
-        }
-    </script>
     <script src="js/script.js"></script>
     <script src="js/style-switcher.js"></script>
-    <!-- <script src="https://smtpjs.com/v3/smtp.js"></script> -->
     <script src="js/mail.js"></script>
 
 </body>
